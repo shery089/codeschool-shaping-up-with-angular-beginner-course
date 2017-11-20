@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
+	<head>
+		<link rel="stylesheet" href="styles/bootstrap.min.css"/>
+	</head>
+
+	<body ng-controller="StoreController as store">
+		<!--  Store Header  -->
+
+		<div class="container-fluid jumbotron">
+			<h2 class="container text-center">
+				Flatlander Crafted Gems
+				<small>
+					an Angular store
+				</small>
+			</h2>
+		</div>
+
+		<!--  Products Container  -->
+		<div class="container-fluid">
+			<div class="row">
+				<!--  Product Container  -->
+				<product-tile></product-tile>
+			</div>
+		</div>
+
+		<script src="scripts/angular.min.js"></script>
+		<script src="scripts/products.js"></script>
+		<script src="scripts/app.js"></script>
+	</body>
+</html>
